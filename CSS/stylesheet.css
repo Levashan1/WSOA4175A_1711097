@@ -1,6 +1,3 @@
 header{
-    background-image: url(../Assets/Background.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+    background-color: brown;
 }
