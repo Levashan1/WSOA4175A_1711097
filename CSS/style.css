@@ -1,3 +1,7 @@
 h1{
     text-decoration-color: red;
 }
+header{
+    background-image: url(../assets/Background.jpg);
+    background-position: center;
+}
