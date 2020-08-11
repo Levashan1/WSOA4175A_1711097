@@ -3,6 +3,8 @@ header{
 }
 body{
     background-image: url(../assets/Background.jpg);
+    background-position: center;
+    background-size: cover;
 }
 nav{
     width: 100%;
