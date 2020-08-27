@@ -1,57 +1,62 @@
 *{
-  
-    padding: 2px 2px;
     margin: auto;
+}
+.mainbody{
+    background-image: url(../assets/back.jpg);
+    height: 1080px;
+    background-position: center;
+}
+header{
+    background-color: #FFACFC;
+    width: 100%;
+    margin: 0;
 
 }
-head{
-    background-color: chartreuse;
+nav ul{
+    background-color: #F148FB;
+    position: relative;
+    top: 10px;
+    height: 10%;
+    z-index: inherit;
+    transition:height 0.3s;
+    text-align: right;
 }
-body{
-    background-image: url(../assets/back.jpg);
-    background-position: bottom;
-    background-size: cover;
-}
-nav{
-    width: 99%;
-    background-color: rgba(2, 80, 197, 0.411);
-    position: absolute;
-}
-nav ul{  
-    float: Left;
-    margin-top: auto;  
+ul li{  
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 10px;
+    padding: 0;
 }
 li a { 
-    color: purple;
-    text-align: center;
+    color: #01FFFF;
     font-size: 30px;
-    display: inline-block;
-    width: 150px;
-    height: 35px;
 }
 li a:hover{
-    background-color: turquoise;
+    background-color: #7122FA;;
 }
-h2{
-    position: absolute;
-   top: 40%;
-   left: 50%;
-   transform: translate(-50%,-50%);
+h1{
+    height: 100px;
+    width: 1000px;;
+    text-align: center;
+    transform: translate(0%, 400%);
 }
-
 section{
-    padding: 30px;
+    
 }
 p{
    font-size: 50px;
    font-family: Georgia, 'Times New Roman', Times, serif;
-   text-decoration-color: lawngreen;
-   position: absolute;
+   text-decoration-color: lawngreen; 
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
 }
-.Main{
-    max-width: 1920px;
-    margin: auto;
+.sub-body{
+    background-image: url(../assets/neoncity.jpg);
+    height: 600px;
+}
+.Blog-subbody{
+    display: inline;
+    text-align: center;
 }
