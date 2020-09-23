@@ -1,15 +1,22 @@
+const menuData = [
+
+  { title: 'Home', link: '/index'},
+  { title: 'Blog', link: '/Blog'},
+  { title: 'About', link: '/About'},
+
+]
 const intializemenu = () => {
-    const nav = document.querySelector('nav');
+    const Nav = document.querySelector('nav');
     
-    const ul = document.createElement('ul');
+    const Ul = document.createElement('ul');
     
     for(let item of ['Home', 'Blog', 'About']){
-        const li = document.createElement('li');
-        li.innerText = item;
+        const Li = document.createElement('li');
+        Li.innerText = item;
         
-        ul.appendChild(li);
+        document.Ul.appendChild(Li);
     
     }
-    nav.appendChild(ul);
+    document.Nav.appendChild(ul);
     };
-    document.addEventListener('DomContentLoaded', () => intializemenu());
+document.addEventListener('DOMContentLoaded', () => intializemenu());
