@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#"></html>
 <html>
 <head>
     <title>Levashan Pillay</title>
@@ -16,16 +17,19 @@
                  <li> <a href="Blog.html">My Blogs</a></li> 
                  <li> <a href="About.html">About Me</a></li>
             </ul>
-            <a href="index.html"><img src="assets/logo.png" width="200px" height="200px" style="margin-left: 50px; margin-top: 50px;"></a>
+          
          </nav>
 </header>
     <main>
+        <a href="index.html"><img src="assets/logo.png" width="200px" height="200px" style="margin-left: 50px; margin-top: 50px;"></a>
         <h1>Blogs</h1>
         <br>
     </main>
 <section class="Blog-subbody">
     <ul>
-        <article class="blog1">
+        <article class="blog1" data-columns="1"
+        data-index-number="1"
+        data-parent="Blogs">
         <li>WireFrame</li>
         <br>
         <img src="assets/Slide1.JPG" width="800px" height="500px">
@@ -34,7 +38,31 @@
         <img src="assets/Slide4.JPG" width="800px" height="500px">
         </article>
         <br>
-        <article class="blog2">
+        <article class="blog2" data-columns="2"
+        data-index-number="2"
+        data-parent="Blogs">
+
+        <!--
+        
+            Javascript:
+        const article = document.querySelector('class');
+ 
+        article.dataset.columns // "3"
+        article.dataset.indexNumber // "12314"
+        article.dataset.parent // "Blogs"
+    
+            css:
+        article::before {
+            content: attr(data-parent); 
+                        }
+        article[data-columns='3'] {
+             width: 400px;
+                }
+        article[data-columns='4'] {
+             width: 600px;
+                }                  
+        -->
+
         <li>As We May Think</li>
         <br>
         <br>
@@ -52,6 +80,11 @@
             Keeping that in mind, algorithms that are now developed for the web are trying to replicate this cognitive flow by categorizing information and linking them by any connections or relevance to each other.
             The future of the web will succeed the theory presented by Vannevar Bush and web trails of relevant information as effective and the human mind itself. </p>
     
+        </article>
+        <article class="blog3" data-columns="3"
+        data-index-number="3"
+        data-parent="Blogs">
+
         </article>
         
         <li>blog 3</li>
