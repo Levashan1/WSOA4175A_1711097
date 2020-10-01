@@ -1,8 +1,4 @@
-console.log("working");
-const blogPosts = [
-  {title: "wireframe", date: "thedate"}
-  
-];
+
 
 const menuItem = [
 
