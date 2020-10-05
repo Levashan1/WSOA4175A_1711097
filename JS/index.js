@@ -1,6 +1,5 @@
 
-
-const menuItem = [
+/*const menuItem = [
 
   { title: 'Home', link: '/index'},
   { title: 'Blog', link: '/Blog', children: blogPosts},
@@ -38,3 +37,4 @@ const intializemenu = () => {
     document.nav.appendChild(ul);
     };
 document.addEventListener('DOMContentLoaded', () => intializemenu());
+*/

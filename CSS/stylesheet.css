@@ -1,46 +1,25 @@
 *{
-    margin: auto;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration:none;
 }
 main{
     width: 100%;
-    height:350px;
+    height: 350px;
     background-image: url(../assets/neoncity.jpg);
     background-position: center;
    
-    
 }
 header{
     background-color:#00174d;
-    width: 100%;
+    width: 100vw;
     margin: 0;
-
 }
-nav ul{
-    background-color: #8048FB;
-    position: relative;
-    top: 10px;
-    height: 10%;
-    z-index: inherit;
-    transition:height 0.3s;
-    text-align: right;
+body{
+    font-family: "Roboto";
 }
-ul li{  
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 40px;
-    margin-top: 10px;
-    padding: 0;
-}
-li a{ 
-    color: #01FFFF;
-    font-size: 30px;
-
-}
-li a:hover{
-    background: rgba(228, 250, 250, 0);
-	color: #ea00ff;
-	box-shadow: inset 0 0 0 3px #7005eb;
-}
+/* styling of the body and other elements on screen*/
 h1{
     color:#FF0099;
     text-align: center;
@@ -48,38 +27,166 @@ h1{
     backdrop-filter: brightness(60%);
     backdrop-filter: blur(2px);
     background-color: black;
-   
-    
 }
 p{
    font-size: 25px;
    font-family: Georgia, 'Times New Roman', Times, serif;
-  
-   
 }
 .sub-body{
+    text-decoration: none;
     text-align: center;
     background-color: black;
-    height: 600px;
+   
 }
-.Blog-subbody{
-    display: inline;
-    text-align: center;
+figcaption{
+    text-decoration: none;
+    font-size: xx-large;
+    color:white;
 }
-.blog1{
-    height: 2100px;
-    width: 1000px;
-    background-color: grey;
+figcaption:hover{
+    color:black;
+    transition: ease-in-out;
+}
 
-}
-.blog2{
-    height: 1000px;
-    width: 1000px;
-    background-color:lightgray;
-
-}
 #Projects-subbody{
  font-size: 30px;
  margin-right: 10px;
 }
 
+
+/*styling for the navigation elements */
+
+.desktop-nav{
+    background: black;
+    width: 100vw;
+    height: 51px;
+    float: right;
+}
+nav{
+    float: right;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul a{
+    padding: 16px 32px;
+    display: block;
+    text-decoration: none;
+    color:White;
+    background:#FF0099;
+    
+}
+nav ul a:hover{
+    background:#09FBD3;
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    box-shadow:3px 2px 2px -1px rgba(0, 0, 0, .32);
+}
+nav ul ul a{
+    min-width:170px;
+}
+
+.mobile-nav{
+    display: none;
+
+}
+#toggle-nav{
+    display: none;
+}
+.fa-caret-down{
+    margin-left: 8px;
+}
+
+/* adaptive display to toggle mobile display version */
+@media(max-width:720px){
+    .desktop-nav{
+        display: none;
+    }
+
+    #toggle-nav{
+     display: block;
+     position:fixed;
+     top: 24px;
+     right:8px;
+     font-size:42px;
+     background: #FF0099;
+     padding: 2px 16px;
+     border-radius:50%;
+     transition: .4s;
+     cursor: pointer;
+    }
+    .mobile-nav{
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: .4s ease-in-out;
+    }
+    #toggle-nav.open{
+        transform: rotate(225deg);
+        color: red;
+    }
+    .mobile-nav.open{
+        max-height: 260px;
+    }
+    .mobile-nav ul a{
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    }
+    .mobile-nav ul ul{
+    margin-left: 4px;
+    display: none;
+    }
+    .mobile-nav ul ul a{
+    background: #FF0099;
+    }
+    .mobile-nav ul a:hover{
+        background:#09FBD3;
+    }
+
+}
+/* this is styling for the images on index page*/
+.aboutMeDisplay{
+   
+    float: left;
+    width: 50%;
+    background: black;
+    text-decoration:none;
+    padding: 10px;
+  
+    
+  
+}
+.aboutMeDisplay:hover{
+    background: #FF5F01;
+   
+}
+.creativeProjectDisplay{
+
+    float: left;
+    width: 100%;
+    background: black;
+    text-decoration:none;
+    padding: 10px;
+    
+}
+.creativeProjectDisplay:hover{
+    background:#7d12ff;
+ 
+}
+.blogDisplay{
+    float: left;
+    width: 50%;
+    background: black;
+    text-decoration:none;
+    padding: 10px;
+    
+}
+.blogDisplay:hover{
+    background:#FE1C80;
+    
+}
