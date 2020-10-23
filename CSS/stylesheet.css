@@ -3,33 +3,35 @@
     margin:0;
     box-sizing: border-box;
     text-decoration:none;
+    
 }
 main{
     width: 100%;
-    height: 350px;
+    height: 380px;
     background-image: url(../assets/neoncity.jpg);
     background-position: center;
    
 }
 header{
-    background-color:#00174d;
+    background-color:#000000;
     width: 100vw;
     margin: 0;
 }
 body{
     font-family: "Roboto";
+    overflow-x: hidden;
 }
 /* styling of the body and other elements on screen*/
 h1{
-    color:#FF0099;
+    color:#0effb1;
     text-align: center;
-    font-size: 40px;
+    font-size: xx-large;
     backdrop-filter: brightness(60%);
     backdrop-filter: blur(2px);
     background-color: black;
 }
 p{
-   font-size: 25px;
+   font-size: large;
    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .sub-body{
@@ -40,8 +42,9 @@ p{
 }
 figcaption{
     text-decoration: none;
-    font-size: xx-large;
-    color:white;
+    font-size: x-large;
+    color:#bd4040;
+    text-align: center;
 }
 figcaption:hover{
     color:black;
@@ -59,30 +62,36 @@ figcaption:hover{
 .desktop-nav{
     background: black;
     width: 100vw;
-    height: 51px;
-    float: right;
+   
 }
 nav{
-    float: right;
+ 
 }
 nav ul{
     display: flex;
     list-style: none;
+    float: right;
+    margin-right: 1%;
 }
 nav ul a{
+    margin-top: 4%;
     padding: 16px 32px;
     display: block;
     text-decoration: none;
-    color:White;
-    background:#FF0099;
-    
+    color: black;
+    background:gold;
+    font-size: x-large;
+    border-radius: 50px;
+    margin-right: 1vw;
 }
 nav ul a:hover{
-    background:#09FBD3;
+    background:black;
+    color: #0effb1;
+    font-size: xx-large;
 }
 nav ul ul{
     display: none;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     box-shadow:3px 2px 2px -1px rgba(0, 0, 0, .32);
 }
@@ -102,91 +111,279 @@ nav ul ul a{
 }
 
 /* adaptive display to toggle mobile display version */
-@media(max-width:720px){
-    .desktop-nav{
-        display: none;
-    }
 
-    #toggle-nav{
-     display: block;
-     position:fixed;
-     top: 24px;
-     right:8px;
-     font-size:42px;
-     background: #FF0099;
-     padding: 2px 16px;
-     border-radius:50%;
-     transition: .4s;
-     cursor: pointer;
-    }
-    .mobile-nav{
-        display: block;
-        max-height: 0;
-        overflow: hidden;
-        transition: .4s ease-in-out;
-    }
-    #toggle-nav.open{
-        transform: rotate(225deg);
-        color: red;
-    }
-    .mobile-nav.open{
-        max-height: 260px;
-    }
-    .mobile-nav ul a{
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-    }
-    .mobile-nav ul ul{
-    margin-left: 4px;
-    display: none;
-    }
-    .mobile-nav ul ul a{
-    background: #FF0099;
-    }
-    .mobile-nav ul a:hover{
-        background:#09FBD3;
-    }
-
-}
 /* this is styling for the images on index page*/
+
 .aboutMeDisplay{
-   
     float: left;
     width: 50%;
     background: black;
     text-decoration:none;
     padding: 10px;
   
-    
-  
 }
 .aboutMeDisplay:hover{
-    background: #FF5F01;
-   
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color:#662d8e;
+    color:black;
 }
 .creativeProjectDisplay{
 
     float: left;
     width: 100%;
     background: black;
-    text-decoration:none;
-    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    
     
 }
 .creativeProjectDisplay:hover{
-    background:#7d12ff;
- 
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color: #3a2695;
 }
+
 .blogDisplay{
     float: left;
     width: 50%;
     background: black;
     text-decoration:none;
     padding: 10px;
+
+}
+
+.blogDisplay:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);    
+    border-radius: 20px;
+    background-color: #312ec3;
+}
+
+.logo:hover{
+    transition: .6s;
+    cursor: pointer;
+    transform: rotate(360deg);
+    color:rgba(0, 0, 0, .30);
+}
+
+.finalgames{
+   
+    float: right;
+    background: black;
+    position: relative;
+   
+}
+.Final1{
+    float: right;
+    width: 100vw;
+    color: pink;
+    padding: 20px 20px 20px;
+ 
+}
+iframe{
+    width: 50%;
+    margin-left: 25%;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+
+ }
+       
+ .cont{
+     width: 100%;
+     padding: 10%;
+     padding-top: 1%;
+     
+ }
+ .content{
+     display: block;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden; 
+     background-color: black;
+     padding: 20px 20px;
+     border-radius: 40px;
+     color: #45b18e;
+     
+     
+ }
+ .content2{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    background-color:  black; 
+    padding: 20px 20px;
+    border-radius: 40px;
+    color:  #45b18e;
     
 }
-.blogDisplay:hover{
-    background:#FE1C80;
+ .btn-box{
+     display: flex;
+     background:#393aa4;
+ }
+
+ .btn-box a{
+
+     background: black;
+     border-radius: 20px;
+     cursor:pointer;
+     margin-top: 1%;
+     margin-bottom: 1%;
+     padding: 14px 16px;
+     margin-left: 20px;
+     font-size: x-large;
+     font-weight: bold;
+     color:gold;
+  
+ } 
+ .btn-box a:hover{
+    color:#b50f32;
+}
+ 
+.Prototypes{
+    width: 100%;
+    padding: 10%;
+    padding-top: 1%;
+}
+h2{
+    text-align: center;
+    padding: 20px 20px;
+    color: #f0379b;
+    font-size: 30px;
+}
+h3{
+    text-align: center;
+    padding: 20px 20px;
+    color: #00e7ff;
+    font-size: 28px;
+}
+#final{
+    background: #222167;
+}
+#proto{
+    background: #4c4aa5;
+}
+.Description{
+    padding: 5% 10%;
+    background: black;
+    color: #45b18e;
+    font-size: large;
+    align-items: center;
+}
+.Description img{
+    width: 50%;
+    padding: 12px 16px;
+    margin-left: 25%;
+    border-radius: 50px;
+}
+h4{
+    text-align: center;
+    padding: 20px 20px;
+    color: #f0379b;
+    font-size: 30px;
+}
+#myBtn {
+        display: none; 
+        position: fixed; 
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none; 
+        outline: none;
+        background-color:gold; 
+        color: black; 
+        cursor: pointer; 
+        padding: 15px; 
+        border-radius: 10px; 
+        font-size: 18px; 
+      }
+      
+      #myBtn:hover {
+        background-color: black; 
+        color: #0effb1;
+      }
+
+
+@media(max-width:720px){
+
+    .Description img{
+        width: 80%;
+        
+    }
+    .aboutMeDisplay{
+        width: 100%;
+      
+    }
+
+    .creativeProjectDisplay{
+        width: 100%;
+        
+    }
+    .Description img{
+        width: 90%;
+        padding: 12px 16px;
+        margin-left: 5%;
+        border-radius: 50px;
+    }
     
+    .blogDisplay{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+        margin-left: 0%;
+        height: 400px;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    
+     }
+     nav ul a{
+        margin-top: 4%;
+        padding: 16px 32px;
+        display: block;
+        text-decoration: none;
+        color: black;
+        background:gold;
+        font-size: large;
+        border-radius: 50px;
+        margin-right: 1vw;
+    }
+    .aboutMeDisplay{
+    
+        width: 100%;
+    }
+
+    .creativeProjectDisplay{
+        width: 100%;
+    }
+ 
+    .blogDisplay{ 
+        padding-top: 10%;
+        width: 100%;
+    }
+    .btn-box{
+        padding-top: 10%;
+    }
+    
+    
+
+}
+@media(max-width:450px){
+    .blogDisplay{ 
+        margin-top: 5%;
+        padding-top: 10%;
+        width: 100%;
+    }
+    .btn-box{
+        padding-top: 12%;
+    }
 }

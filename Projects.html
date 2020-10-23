@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
     <script type="module" src="JS/CreativeProject.js" async></script>
-    <script type="module" src="JS/menu.js" async></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/e08bf4ad9b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,82 +14,105 @@
 <body>
 
     <nav class="desktop-nav">
-        <ul>
-             <li class="drop-down"><a href="#">Projects<i class="fas fa-caret-down"></i></a>
-                <ul>
-                    <li><a href="Projects.html">All</a></li>
-                    <li><a href="#">Prototypes</a></li>
-                    <li><a href="#">Final games</a></li>
-                </ul>
-             </li>
-             
-             <li class="drop-down"><a href="#">My Blogs<i class="fas fa-caret-down"></i></a>
-                <ul>
-                    <li><a href="Blog.html">All</a></li>
-                    <li><a href="html/blog1.html">WireFrame</a></li>
-                    <li><a href="html/blog2.html">b2</a></li>
-                    <li><a href="html/blog3.html">b3</a></li>
-                    <li><a href="#">b4</a></li>
-                </ul>
-             </li> 
-             <li class="drop-down"><a href="#">About Me<i class="fas fa-caret-down"></i></a>
-                <ul>
-                    <li><a href="About.html">Hobbies</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">influences</a></li>
-                </ul>
-             </li>
+        <ul>       
+                    <li><a href="Projects.html">Projects</a></li>       
+                    <li><a href="Blog.html">Blogs</a></li>   
+                    <li><a href="About.html">About</a></li>
+                   
         </ul> 
      </nav>
 
-
-     <div id="toggle-nav">+</div>
-     <nav class="mobile-nav">
-        <ul>
-            <li class="m-drop-down"><a href="#">Projects<i class="fas fa-caret-down"></i></a>
-               <ul>
-                   <li><a href="Projects.html">All</a></li>
-                   <li><a href="#">Prototypes</a></li>
-                   <li><a href="#">Final games</a></li>
-               </ul>
-            </li>
-            <li class="m-drop-down"><a href="#">My Blogs<i class="fas fa-caret-down"></i></a>
-               <ul>
-                   <li><a href="Blog.html">All</a></li>
-                   <li><a href="html/blog1.html">WireFrame</a></li>
-                   <li><a href="html/blog2.html">b2</a></li>
-                   <li><a href="html/blog3.html">b3</a></li>
-                   <li><a href="#">b4</a></li>
-               </ul>
-            </li> 
-            <li class="m-drop-down"><a href="#">About Me<i class="fas fa-caret-down"></i></a>
-               <ul>
-                   <li><a href="About.html">Hobbies</a></li>
-                   <li><a href="#">Skills</a></li>
-                   <li><a href="#">influences</a></li>
-               </ul>
-            </li>
-       </ul> 
-    </nav>
-
-
  <main>
-    <a href="index.html"><img src="assets/logo.png" width="200vw" height="200vw" style="margin-left: 50px; margin-top: 50px;"></a>
+    <a href="index.html"><img class="logo" src="assets/logo2.png" width="200vw" height="200vw" style="margin-left: 5vw; margin-top: 50px; margin-bottom: 70px;"></a>
         <h1>My Games</h1>
-    </main>
+</main>
+<strong class="btn-box">
+    <a id="btn1" data-x="final" href="#final">Vertical slice</a>
+    <a id="btn2" data-x="proto" href="#proto">Prototypes</a>
+</strong>
 
-<section id="Projects-subbody">
-    <ol>
-    <li>Arena 6</li>
-    <li>Don't Die</li>
-    <li>Prototype 1</li>
-    <li>Prototpye 2</li>
-    <li>Sun Wu Kong</li>
-    <li>Lazer Tag</li>
-    </ol>
-    
+<h1>Vertical slice: Small Demo Games</h1>
+<section id="final" class="cont" data-index="1">
+
+    <article class="content"> 
+        <h2>June 2019 Exam: DON'T DIE</h2> 
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PncUEkUB8WI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <p>This game focused on building a character controller. The goal of this game was to simulate the floaty movement mechanics of the old Quake games. During this game I also focused a lot on level design, making sure that there was interleading doors in every area to give players a way to always escape the overwhelming number of enemies. This was only the first time working with non-player characters, thus their behaviour was limited. The object of the game was to see how many kills a player could get to set the high score, the game was made for a 5-10 min playtime, so it progresses rapidly. Although my gameplay does not look overwhelming, no play testers managed to score above 60 kills. The difficulty in the game is progressive because players start with all their weapons and as they progress, they lose weapons. finally, if they break the 50 kill mark they left with only a pistol.  </p>
+
+    </article>
+    <br>
+    <br>
+    <article class="content">
+            <h2>Blambo 2018</h2> 
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bdhM5inHg3I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <p>Blambo was the first time working with 3d models. In this Exam we were required to build a scene, all the assets except for Blambo and robot were made by me. In addition to rigging, animating and texturing Blambo we used lighting, post processing and made the particle system play different particle effects depending on the object being shot. The sound was a bonus.</p>
+    </article>
+<br>
+<br>
+    <article class="content">
+            <h2>My Second Digital Game: Dual Invaders</h2> 
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4q2PjWPvszo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <p>Dual invaders is the second digital game I ever made.</p>
+    </article>
+<br>
+<br>
+    <article class="content" data>
+            <h2>My First Digital Game: Breakout 2018</h2> 
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dl4vJSXzYN4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>         
+           <br>
+            <p>Break out is the first digital game I ever made, it not pretty but its holds a lot of sentimental value. </p>
+    </article>
+
+    <!--this-->
 </section>
+<h1>Prototypes: Less then 7 days to create a basic game from a prompt</h1>
+<section id="proto" class="Prototypes" data-index="2">
+    <article class="content2">
+        <h3>I Spy: Group Prototype</h3> 
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aOWYtktJKHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <p>The prompt of this game was to recreate an old experience. Group members: Deen, Robyn, Suna and I decide to re-create the feeling of going on a road trip. For this game I was the artist and made the 3d props inside the car, did the post processing and the layout and animation in the scene . Suna was the programmer, Deen made the car, edited the music and worked with Robyn to do the voice overs. Robin also made the mom and dad.  </p>
+    </article>
+<br>
+<br>
+    <article class="content2">
+            <h3>Carnival Game: Group Prototype</h3> 
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/v9S9Y0jNofM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <p>The prompt for this game was to create the experience of going to a carnival.</p>
+    </article>
+<br>
+<br>
+    <article class="content2">
+            <h3>A dogs way home</h3> 
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XY2BeSnunAQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <p>The prompt was to recreate a part of an existing game; thus this prototype is based on the game The First Tree.  The prototype recreates the way the game communicates it narrative through the interactable objects that play dialogue.  </p>
+    </article>
+<br>
+<br>
+    <article class="content2">
+            <h3>First Turn Based System</h3> 
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Te29p3USwYA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <br>
+            <p>This was a prototype made to work on turn based game mechanics.</p>
+    </article>
+<br>
 
+<button onclick="toTop()" id="myBtn" title="Go to top">Top</button>
+
+</section>
 
   
 </body>
