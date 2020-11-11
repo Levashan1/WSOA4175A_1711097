@@ -1,13 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&family=Text+Me+One&display=swap');
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
     text-decoration:none;
+    font-family: 'Text Me One', sans-serif;
+    
     
 }
 main{
     width: 100%;
-    height: 380px;
+    height: 24em;
     background-image: url(../assets/neoncity.jpg);
     background-position: center;
    
@@ -18,11 +22,11 @@ header{
     margin: 0;
 }
 body{
-    font-family: "Roboto";
     overflow-x: hidden;
 }
 /* styling of the body and other elements on screen*/
 h1{
+    
     color:#0effb1;
     text-align: center;
     font-size: xx-large;
@@ -32,13 +36,14 @@ h1{
 }
 p{
    font-size: large;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-family: 'Quicksand', sans-serif;
 }
 .sub-body{
+    padding-top: 5em;
     text-decoration: none;
     text-align: center;
     background-color: black;
-   
+    height: 36.2em;
 }
 figcaption{
     text-decoration: none;
@@ -51,11 +56,6 @@ figcaption:hover{
     transition: ease-in-out;
 }
 
-#Projects-subbody{
- font-size: 30px;
- margin-right: 10px;
-}
-
 
 /*styling for the navigation elements */
 
@@ -63,9 +63,6 @@ figcaption:hover{
     background: black;
     width: 100vw;
    
-}
-nav{
- 
 }
 nav ul{
     display: flex;
@@ -75,13 +72,13 @@ nav ul{
 }
 nav ul a{
     margin-top: 4%;
-    padding: 16px 32px;
+    padding: 1em 2em;
     display: block;
     text-decoration: none;
     color: black;
     background:gold;
     font-size: x-large;
-    border-radius: 50px;
+    border-radius: 10em;
     margin-right: 1vw;
 }
 nav ul a:hover{
@@ -93,22 +90,11 @@ nav ul ul{
     display: none;
     position: relative;
     flex-direction: column;
-    box-shadow:3px 2px 2px -1px rgba(0, 0, 0, .32);
 }
 nav ul ul a{
     min-width:170px;
 }
 
-.mobile-nav{
-    display: none;
-
-}
-#toggle-nav{
-    display: none;
-}
-.fa-caret-down{
-    margin-left: 8px;
-}
 
 /* adaptive display to toggle mobile display version */
 
@@ -116,53 +102,38 @@ nav ul ul a{
 
 .aboutMeDisplay{
     float: left;
-    width: 50%;
+    width: 33.3%;
     background: black;
-    text-decoration:none;
-    padding: 10px;
-  
 }
 .aboutMeDisplay:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    border-radius: 20px;
-    background-color:#662d8e;
-    color:black;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    border-radius: 5em;
 }
 .creativeProjectDisplay{
-
     float: left;
-    width: 100%;
+    width: 33.4%;
     background: black;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    
-    
 }
 .creativeProjectDisplay:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    border-radius: 20px;
-    background-color: #3a2695;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    border-radius: 5em;
 }
 
 .blogDisplay{
     float: left;
-    width: 50%;
+    width: 33.3%;
     background: black;
-    text-decoration:none;
-    padding: 10px;
-
 }
 
 .blogDisplay:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);    
-    border-radius: 20px;
-    background-color: #312ec3;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);    
+    border-radius: 5em;
 }
 
 .logo:hover{
@@ -179,13 +150,7 @@ nav ul ul a{
     position: relative;
    
 }
-.Final1{
-    float: right;
-    width: 100vw;
-    color: pink;
-    padding: 20px 20px 20px;
- 
-}
+
 iframe{
     width: 50%;
     margin-left: 25%;
@@ -198,7 +163,7 @@ iframe{
        
  .cont{
      width: 100%;
-     padding: 10%;
+     padding: 5em;
      padding-top: 1%;
      
  }
@@ -208,8 +173,8 @@ iframe{
      align-items: center;
      overflow: hidden; 
      background-color: black;
-     padding: 20px 20px;
-     border-radius: 40px;
+     padding: 5em 5em;
+     border-radius: 2em;
      color: #45b18e;
      
      
@@ -220,8 +185,8 @@ iframe{
     align-items: center;
     overflow: hidden; 
     background-color:  black; 
-    padding: 20px 20px;
-    border-radius: 40px;
+    padding: 5em 5em;
+    border-radius: 2em;
     color:  #45b18e;
     
 }
@@ -233,12 +198,12 @@ iframe{
  .btn-box a{
 
      background: black;
-     border-radius: 20px;
+     border-radius: 1em;
      cursor:pointer;
      margin-top: 1%;
      margin-bottom: 1%;
-     padding: 14px 16px;
-     margin-left: 20px;
+     padding: 1em 1em;
+     margin-left: 1em;
      font-size: x-large;
      font-weight: bold;
      color:gold;
@@ -250,20 +215,20 @@ iframe{
  
 .Prototypes{
     width: 100%;
-    padding: 10%;
+    padding: 5em;
     padding-top: 1%;
 }
 h2{
     text-align: center;
-    padding: 20px 20px;
+    padding: 2em 2em;
     color: #f0379b;
-    font-size: 30px;
+    font-size: xx-large;
 }
 h3{
     text-align: center;
     padding: 20px 20px;
     color: #00e7ff;
-    font-size: 28px;
+    font-size: x-large;
 }
 #final{
     background: #222167;
@@ -280,30 +245,30 @@ h3{
 }
 .Description img{
     width: 50%;
-    padding: 12px 16px;
+    padding: 2em 3em;
     margin-left: 25%;
-    border-radius: 50px;
+    border-radius: 5em;
 }
 h4{
     text-align: center;
-    padding: 20px 20px;
+    padding: 2em 2em;
     color: #f0379b;
-    font-size: 30px;
+    font-size: xx-large;
 }
 #myBtn {
         display: none; 
         position: fixed; 
-        bottom: 20px;
-        right: 30px;
+        bottom: 2%;
+        right: 3%;
         z-index: 99;
         border: none; 
         outline: none;
         background-color:gold; 
         color: black; 
         cursor: pointer; 
-        padding: 15px; 
-        border-radius: 10px; 
-        font-size: 18px; 
+        padding: 1.6em; 
+        border-radius: 2em; 
+        font-size: x-large; 
       }
       
       #myBtn:hover {
@@ -314,13 +279,11 @@ h4{
 
 @media(max-width:720px){
 
-    .Description img{
-        width: 80%;
-        
-    }
+   /* .Description img{
+        width: 80%;  
+    }*/
     .aboutMeDisplay{
-        width: 100%;
-      
+        width: 100%; 
     }
 
     .creativeProjectDisplay{
@@ -329,9 +292,20 @@ h4{
     }
     .Description img{
         width: 90%;
-        padding: 12px 16px;
+        padding: 1em 1.2em;
         margin-left: 5%;
-        border-radius: 50px;
+        border-radius: 5em;
+    }
+    .cont{
+        width: 100%;
+        padding: 1em;
+        padding-top: 1%;
+        
+    }
+    .Prototypes{
+        width: 100%;
+        padding: 1em;
+        padding-top: 1%;
     }
     
     .blogDisplay{
@@ -348,13 +322,13 @@ h4{
      }
      nav ul a{
         margin-top: 4%;
-        padding: 16px 32px;
+        padding: 1em 2em;
         display: block;
         text-decoration: none;
         color: black;
         background:gold;
         font-size: large;
-        border-radius: 50px;
+        border-radius: 5em;
         margin-right: 1vw;
     }
     .aboutMeDisplay{
@@ -365,25 +339,27 @@ h4{
     .creativeProjectDisplay{
         width: 100%;
     }
- 
-    .blogDisplay{ 
-        padding-top: 10%;
-        width: 100%;
-    }
+
     .btn-box{
         padding-top: 10%;
+    }
+    /* navigation change */
+    nav ul{
+        display: block;
+        list-style: none;
+        float: right;
+        margin-right: 5%;
     }
     
     
 
 }
 @media(max-width:450px){
-    .blogDisplay{ 
-        margin-top: 5%;
-        padding-top: 10%;
-        width: 100%;
-    }
+  
     .btn-box{
         padding-top: 12%;
+    }
+    main{
+        height: 30em;
     }
 }

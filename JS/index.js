@@ -1,40 +1,28 @@
 
-/*const menuItem = [
+const menuData = [
+  {title: 'Projects', link: '../Projects.html'},
+  {title: 'Blogs', link: '../Blog.html'},
+  {title: 'About', link: '../About.html' }
 
-  { title: 'Home', link: '/index'},
-  { title: 'Blog', link: '/Blog', children: blogPosts},
-  { title: 'About', link: '/About'},
 ];
 
-const createMenuItem = (item) => {
-  const Li = document.createElement('li');
-  const a = document.createElement('a');
-  a.innerText = item.title;
-  a.href = item.link;
-  Li.appendChild(a);
 
+const CreateMenu = () => {
+  const nav = document.querySelector('nav');
 
-        if(item.children && item.children.lenght){
+  const ul = document.createElement('ul');
+ 
+  for(let item of menuData){
 
-          let ul = document.createElement('ul');
-          for(let childitem of item.children){
-            let childMenuitem = createMenuItem(childitem);
-            ul.appendChild(childMenuitem);
-          }
-          li.appendChild(ul);
-        }
-        
-return Li;
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.innerText = item.title;
+    a.href = item.link
+    li.appendChild(a);
+    ul.appendChild(li)
+  }
+
+  nav.appendChild(ul)
 };
-const intializemenu = () => {
-    const nav = document.querySelector('nav');
-    const ul = document.createElement('ul');
-   
-    for(let item of menuItem){
-       const li = createMenuItem(item);
-       ul.appendChild(Li);
-    }
-    document.nav.appendChild(ul);
-    };
-document.addEventListener('DOMContentLoaded', () => intializemenu());
-*/
+document.addEventListener('DOMContentLoaded', () => CreateMenu());
+

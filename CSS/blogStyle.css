@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&family=Text+Me+One&display=swap');
 *{
     text-decoration: none;
-    
+    font-family: 'Text Me One', sans-serif;
 }
 
 .block{
@@ -18,7 +19,7 @@
     color: white;
     margin-left: 3.5%;
     margin-top: 2%;
-    border-radius: 60px;
+    border-radius: 2em;
 }
 .blog2{
     text-decoration: none;
@@ -30,7 +31,7 @@
     color: white;
     margin-left: 3.5%;
     margin-top: 2%;
-    border-radius: 60px;
+    border-radius: 2em;
 }
 .blog3{
     text-decoration: none;
@@ -42,7 +43,7 @@
     color: white;
     margin-left: 3.5%;
     margin-top: 2%;
-    border-radius: 60px;
+    border-radius: 2em;
 }
 .blog4{
     text-decoration: none;
@@ -54,37 +55,62 @@
     color: white;
     margin-left: 3.5%;
     margin-top: 2%;
-    border-radius: 60px;
+    border-radius: 2em;
     margin-bottom: 5%;
 }
-
+.Design{
+    float: left;
+    width:50%;
+    background: black;
+}
+.Design:hover{
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    border-radius: 2em;
+}
+.Theory{
+    float: left;
+    width:50%;
+    background: black;
+}
+.Theory:hover{
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    border-radius: 2em;
+}
 a{
     color:white;
     text-decoration: none;
+}
+.blogContainer{
+    width:100%;
 }
 
 .blogStyle{
     width:80%;
     padding: 2%;
     background-color: #28185f;
-    border-radius: 30px;
+    border-radius: 2em;
     color: #45b18e;
     display: inline-block;
-   
+    text-align: center;
 
 }
 .block1{
     background: black;
     height: 100%;
     width: 100%;
-   /*text-align: center;*/
+    text-align: center;
    display: inline-block;
+   align-items: center;
 }
 .block1 a{
  padding:10px;
  text-decoration: none;
  background:#28185f;
- border-radius: 20px;
+ border-radius: 2em;
  cursor:pointer;
  font-size: x-large;
  font-weight: bold;
@@ -110,10 +136,18 @@ color:green;
 .layout{
     align-items: center;
 }
+#Blog-subbody{
+padding-top: 2em;
+text-decoration: none;
+text-align: center;
+height: 36.5em;
+background-color: black;
+
+}
 
 @media(max-width:720px){
 
-    .Blog-subbody{
+    #Blog-subbody{
         display: block;
         align-items: center;
         text-decoration: none;
@@ -130,7 +164,7 @@ color:green;
         color: white;
         margin-left: 4%;
         margin-top: 2%;
-        border-radius: 60px;
+        border-radius: 2em;
     }
     .blog2{
         text-decoration: none;
@@ -142,7 +176,7 @@ color:green;
         color: white;
         margin-left: 4%;
         margin-top: 2%;
-        border-radius: 60px;
+        border-radius: 2em;
     }
     .blog3{
         text-decoration: none;
@@ -154,7 +188,7 @@ color:green;
         color: white;
         margin-left: 4%;
         margin-top: 2%;
-        border-radius: 60px;
+        border-radius: 2em;
     }
     .blog4{
         text-decoration: none;
@@ -166,12 +200,18 @@ color:green;
         color: white;
         margin-left: 4%;
         margin-top: 2%;
-        border-radius: 60px;
+        border-radius: 2em;
     }
     .block{
         align-items: center;
         background-color: black;
         height: 450vw;
+    }
+    .Design{
+        width:100%;
+    }
+    .Theory{
+        width:100%;
     }
 
 }
