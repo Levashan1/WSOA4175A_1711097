@@ -1,8 +1,8 @@
 
 const menu = [
-  {title: 'Projects', link: '../Projects'},
-  {title: 'Blogs', link: '../Blog'},
-  {title: 'About', link: '../Abou'}
+  {title: 'Projects', link: '/Projects.html'},
+  {title: 'Blogs', link: '/Blog.html'},
+  {title: 'About', link: '/About.html'}
 
 ];
 
