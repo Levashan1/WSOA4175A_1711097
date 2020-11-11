@@ -1,8 +1,8 @@
 
-const menuData = [
-  {title: 'Projects', link: '../Projects.html'},
-  {title: 'Blogs', link: '../Blog.html'},
-  {title: 'About', link: '../About.html' }
+const menu = [
+  {title: 'Projects', link: '../Projects'},
+  {title: 'Blogs', link: '../Blog'},
+  {title: 'About', link: '../Abou'}
 
 ];
 
@@ -12,7 +12,7 @@ const CreateMenu = () => {
 
   const ul = document.createElement('ul');
  
-  for(let item of menuData){
+  for(let item of menu){
 
     const li = document.createElement('li');
     const a = document.createElement('a');
