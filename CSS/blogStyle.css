@@ -2,6 +2,7 @@
 *{
     text-decoration: none;
     font-family: 'Text Me One', sans-serif;
+    overflow: hidden;
 }
 
 .block{
@@ -221,5 +222,12 @@ background-color: black;
         align-items: center;
         background-color: black;
         height: 650vw;
+    }
+    .block1{
+        width: 100%;
+        margin-top: 10em;
+    }
+    .Theory{
+        padding-top: 3em;
     }
 }

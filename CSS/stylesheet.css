@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration:none;
     font-family: 'Text Me One', sans-serif;
+    overflow: hidden;
     
     
 }
@@ -356,10 +357,40 @@ h4{
 }
 @media(max-width:450px){
   
+    .Design{
+        padding-top: 10em;
+    }
     .btn-box{
         padding-top: 12%;
     }
     main{
         height: 30em;
+    }
+    h2{
+        text-align: center;
+        padding: 2em 2em;
+        color: #f0379b;
+        font-size: x-large;
+    }
+    h3{
+        text-align: center;
+        padding: 20px 20px;
+        color: #00e7ff;
+        font-size: large;
+    }
+    .btn-box{
+        padding-top: 5em;
+    }
+    .content{
+        padding: 1em 1em;
+    }
+    .content2{
+        padding: 1em 1em;
+    }
+}
+@media(max-width:350px){
+
+    .Design{
+        padding-top: 10em;
     }
 }
