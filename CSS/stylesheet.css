@@ -6,7 +6,7 @@
     box-sizing: border-box;
     text-decoration:none;
     font-family: 'Text Me One', sans-serif;
-    overflow: hidden;
+   
     
     
 }
@@ -358,7 +358,7 @@ h4{
 @media(max-width:450px){
   
     .Design{
-        padding-top: 10em;
+        padding-top: 6em;
     }
     .btn-box{
         padding-top: 12%;
