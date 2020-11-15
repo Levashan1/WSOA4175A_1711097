@@ -6,7 +6,7 @@
     box-sizing: border-box;
     text-decoration:none;
     font-family: 'Text Me One', sans-serif;
-   
+    line-height: 1.6;
     
     
 }
@@ -39,12 +39,22 @@ p{
    font-size: large;
    font-family: 'Quicksand', sans-serif;
 }
+.download a{ 
+    text-align: center;
+    background: black;
+    font-size: x-large;
+    font-weight: bold;
+    color:gold;
+}
+.download a:hover{
+    color:#b50f32;
+}
 .sub-body{
-    padding-top: 5em;
+    padding-top: 2em;
     text-decoration: none;
     text-align: center;
     background-color: black;
-    height: 36.2em;
+    height: 40em;
 }
 figcaption{
     text-decoration: none;
@@ -98,6 +108,16 @@ nav ul ul a{
 
 
 /* adaptive display to toggle mobile display version */
+.Contact{
+    background: black;
+    color: #45b18e;
+    width: 100%;
+    float: left;
+    padding-bottom: 2em;
+}
+.Contact p{
+    text-align-last: center;
+}
 
 /* this is styling for the images on index page*/
 
@@ -166,7 +186,7 @@ iframe{
      width: 100%;
      padding: 5em;
      padding-top: 1%;
-     
+     background-color: black;
  }
  .content{
      display: block;
@@ -270,19 +290,21 @@ h4{
         padding: 1.6em; 
         border-radius: 2em; 
         font-size: x-large; 
-      }
-      
-      #myBtn:hover {
+}
+#myBtn:hover {
         background-color: black; 
         color: #0effb1;
-      }
+}
 
 
-@media(max-width:720px){
+@media(max-width:750px){
 
    /* .Description img{
         width: 80%;  
     }*/
+    #myBtn {
+        padding: 1.2em; 
+    }
     .aboutMeDisplay{
         width: 100%; 
     }
@@ -360,6 +382,9 @@ h4{
     .Design{
         padding-top: 6em;
     }
+    .creativeProjectDisplay{
+        padding-top: 6em;
+    }
     .btn-box{
         padding-top: 12%;
     }
@@ -386,6 +411,19 @@ h4{
     }
     .content2{
         padding: 1em 1em;
+    }
+}
+@media(max-width:400px){
+
+    .Design{
+    padding-top: 8em;
+    
+    }
+    .btn-box{
+        padding-top: 8em;
+    }
+    .creativeProjectDisplay{
+    padding-top: 8em;
     }
 }
 @media(max-width:350px){

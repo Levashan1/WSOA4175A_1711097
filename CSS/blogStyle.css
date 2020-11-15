@@ -2,7 +2,7 @@
 *{
     text-decoration: none;
     font-family: 'Text Me One', sans-serif;
-    
+    line-height: 1.6;
 }
 
 .block{
@@ -141,7 +141,7 @@ color:green;
 padding-top: 2em;
 text-decoration: none;
 text-align: center;
-height: 36.5em;
+height: 40em;
 background-color: black;
 
 }
