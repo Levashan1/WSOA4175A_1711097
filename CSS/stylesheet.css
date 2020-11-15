@@ -415,6 +415,9 @@ h4{
 }
 @media(max-width:400px){
 
+    .Description{
+        padding-top: 6em;
+    }
     .Design{
     padding-top: 8em;
     
