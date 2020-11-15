@@ -299,6 +299,10 @@ h4{
 
 @media(max-width:750px){
 
+    nav ul a:hover{
+        font-size: x-large;
+    }
+
    /* .Description img{
         width: 80%;  
     }*/
@@ -373,12 +377,13 @@ h4{
         float: right;
         margin-right: 5%;
     }
-    
-    
-
 }
+    
 @media(max-width:450px){
   
+    nav ul a:hover{
+        font-size: large;
+    }
     .Design{
         padding-top: 6em;
     }
